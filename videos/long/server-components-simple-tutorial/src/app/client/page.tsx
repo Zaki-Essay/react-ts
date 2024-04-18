@@ -7,6 +7,7 @@ export default function ClientPage() {
   const [data, setData] = useState();
 
   useEffect(() => {
+    console.log("this will rendered in the front-end");
     expensiveFunction();
     fetch("/api/data")
       .then((res) => res.json())
